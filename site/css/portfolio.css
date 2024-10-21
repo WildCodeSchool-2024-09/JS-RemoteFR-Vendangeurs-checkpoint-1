@@ -13,6 +13,7 @@
 
 img {
   max-width: 100%;
+  cursor: pointer;
 }
 
 h1 {
@@ -49,6 +50,13 @@ p {
 
 .pink-bg {
   background-color: var(--lightWildColor);
+}
+
+button {
+  background-color:var(--lightWildColor);
+  color: #e6ecf8;
+  border-color: #e6ecf8;
+  border-radius: 20%;
 }
 
 .skills {
