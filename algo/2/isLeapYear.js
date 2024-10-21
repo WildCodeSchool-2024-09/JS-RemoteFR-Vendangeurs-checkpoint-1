@@ -8,10 +8,10 @@ Rappel : Pour vérifier si un nombre est divisible par un autre, tu peux utilise
 */
 
 function isLeapYear(year) {
-  if (year % 4 === true && year % 100 === false ) {
+  if (year % 4 === 0 && year % 100 === 0 ) {
     return true ;
   };
-  if (year % 400 === true) {
+  if (year % 400 === 0) {
     return true;
   };
   return false;

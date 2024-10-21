@@ -28,6 +28,6 @@ button.addEventListener("click", () => {
 
     const backGroundColor = prompt ("Choose a color");
     if (backGroundColor) {
-        document.getElementsByClassName("pink-bg").style.color = backGroundColor;
+        document.getElementsByClassName("pink-bg").style.backgroundcolor = backGroundColor;
     }
 })
