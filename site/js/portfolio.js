@@ -11,16 +11,16 @@ avatarImg.addEventListener("click", () => {
 const button = document.getElementById("changeNameButton");
 const firstname = document.getElementById("firstname");
 const blocBgColor = document.getElementsByClassName("description pink-bg")[0];
+const colorPink = document.querySelectorAll('[class*="pink"]');
 
 button.addEventListener("click", () => {
   let username = prompt("What's your name?");
-  if (username) {
-    firstname.innerHTML = username;
-    firstname.style.color = "white";
-  }
+  firstname.innerHTML = username;
+  firstname.style.color = "white";
 
-  let bgColor = prompt("Enter a color");
-  if (bgColor) {
-    blocBgColor.style.backgroundColor = bgColor;
-  }
+  let color = prompt("Enter a color");
+  blocBgColor.style.backgroundColor = color;
+  colorPink.forEach((element) => {
+    element.style.color = color;
+  });
 });
