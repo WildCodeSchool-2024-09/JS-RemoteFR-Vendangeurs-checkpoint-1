@@ -23,15 +23,33 @@ p {
   padding: 0 var(--gutter);
 }
 
+nav {
+  @media screen and (max-width: 700px) {
+    justify-content: space-between;
+  }
+}
+
 .menu {
   display: flex;
   margin-bottom: var(--gutter);
+}
+
+.title {
+  @media screen and (max-width: 700px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .desktop {
   margin: 0;
   margin-top: calc(var(--gutter) * 5);
   margin-bottom: calc(var(--gutter) * -0.3125);
+
+  @media screen and (max-width: 699px) {
+    display: none;
+  }
 }
 
 .description {
@@ -55,6 +73,15 @@ p {
   margin-top: calc(var(--gutter) * -2);
   border-radius: var(--radius);
   padding: 0 10%;
+
+  @media screen and (min-width: 701px) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  @media screen and (max-width: 699px) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 
 .skills--title {
