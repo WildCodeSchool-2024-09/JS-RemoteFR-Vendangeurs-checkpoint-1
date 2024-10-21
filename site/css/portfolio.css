@@ -11,6 +11,106 @@
   --textAlign: center;
 }
 
+
+
+/* There is a problem with the navigation menu, all links should be at the top right (excepted the logo) for screens greater than 700px */
+@media screen and (min-width: 700px){
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+}
+
+/* The banner must be centered in the page for screens greater than 700px 
+==> !!!!!!centered for all screens size as in the video!!!!!!!!*/
+.avatar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* For screens smaller than 700px you can delete the image of desktop */
+@media screen and (max-width: 700px){
+  .desktop img{
+    display: none;
+    }
+}
+
+/*Ajout pour centrer l'image*/
+.desktop {
+
+  text-align: center;
+}
+
+/* The list of skill must be on the same line for screens greater than 700px */
+@media screen and (min-width: 700px){
+  .skills_block {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+/* The front skill block must be above the back skill block for screens less than 700px */
+@media screen and (max-width: 700px){
+  .skills_block {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+/* When the list skill are in the same line, the front skill block must be in left and the back skill block in the right for screens greater than 700px */
+@media screen and (min-width: 700px){
+  .skills_block {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
+/* Bonus: In the list of projects there is 2 projects in development, with no associated website yet.
+So you can make opacity on the text for all screen */
+.disabled {
+  pointer-events: none;
+  opacity: 50%;
+}
+
+/* Super Bonus: The list of projects must be on the same line 
+for screen sizes greater than 700px */
+@media screen and (min-width: 700px){
+  .list_of_projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 img {
   max-width: 100%;
 }
