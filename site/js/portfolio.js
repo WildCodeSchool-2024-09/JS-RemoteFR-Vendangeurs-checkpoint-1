@@ -10,6 +10,7 @@ myAvatar.addEventListener('click', () => {
 
 const buttonSwitch = document.querySelector('.button-switch');
 const myName = document.querySelector('#firstname');
+// const bannerColor = document.querySelector('.pink-bg'); Step 3
 const bannerColor = document.querySelectorAll('.pink-bg');
 const textColor = document.querySelectorAll('.pink-text');
 
@@ -22,8 +23,8 @@ buttonSwitch.addEventListener('click', () => {
 
     const whatAColor = prompt('What is a new color ?');
 
-    // bannerColor.style.backgroundColor = whatAColor; Ne fonctionne pas avec querySelectorAll (c'est triste)
-    // textColor.style.color = whatAColor;
-
+    bannerColor.forEach(banner => banner.style.backgroundColor = whatAColor);
+    textColor.forEach(text => text.style.color = whatAColor);
+    // correction 17h30 (j'étais a rien d'y arrivé en vrai pas mal du tout)
 });
 
