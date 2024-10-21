@@ -14,4 +14,5 @@ const firstname = document.getElementById("firstname");
 button.addEventListener("click", () => {
   let username = prompt("What's your name?");
   firstname.innerHTML = username;
+  firstname.style.color = "white";
 });
