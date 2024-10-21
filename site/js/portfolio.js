@@ -13,4 +13,8 @@ firstName.style.color = "white";
 
 const colorText = document.querySelectorAll(".pink-text");
 
-colorText.style.color = "#750ff7";
+colorText.forEach(".pink-text") => {
+    ".pink-text".style.color = "#750ff7";
+};
+
+// colorText.style.color = "#750ff7";
