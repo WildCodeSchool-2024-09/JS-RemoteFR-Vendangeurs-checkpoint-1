@@ -130,6 +130,15 @@ main > section {
 	padding: 0;
 }
 
+.column button {
+	padding: calc(var(--gutter) / 1.5);
+	border-radius: calc(var(--radius) / 2);
+	background-color: var(--lightWildColor);
+	color: var(--light);
+	cursor: pointer;
+	border: none;
+}
+
 .pink-text {
 	color: var(--lightWildColor);
 }
