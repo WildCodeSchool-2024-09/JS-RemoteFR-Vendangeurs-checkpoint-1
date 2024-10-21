@@ -2,11 +2,11 @@
 
 const imgAvatar = document.querySelector('.avatarDev');
 imgAvatar.addEventListener('click', function(){
-    imgAvatar.src = image/imgAvatar.svg;
+    imgAvatar.src = "image/avatar.svg";
 });
 
 
-// change username and recolor
+// change username and recolor text and background
 const askButton = document.getElementById('.askButton');
 askButton.addEventListener('click', function(){
 
@@ -23,3 +23,8 @@ askButton.addEventListener('click', function(){
 });
 
 
+// change pink element 
+const pinkText = document.getElementsByClassName("pink-text");
+pinkText.forEach(element => {
+    element.style.color = '#750ff7';
+});
