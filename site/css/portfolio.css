@@ -137,6 +137,10 @@ main > section {
 	color: var(--purple);
 }
 
+.disabled {
+	opacity: 0.5;
+}
+
 .box {
 	width: 25%;
 	padding: calc(var(--gutter) * 2);
