@@ -89,9 +89,15 @@ for screen sizes greater than 700px */
     flex-wrap: wrap;
     text-align: center;
   }
+}
 
-
-
+/*pour aligner le nouveau bouton avec le texte*/
+.description pink-bg {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 
 
