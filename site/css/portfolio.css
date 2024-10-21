@@ -10,6 +10,26 @@
 
   --textAlign: center;
 }
+nav { @media screen and (min-width: 700px){
+display: flex;
+justify-content: space-between ;
+
+
+}
+  
+}
+h5 {
+  font-size: 20px;
+}
+
+.banner {
+  text-align: center;
+}
+
+
+
+
+
 
 img {
   max-width: 100%;
@@ -25,6 +45,7 @@ p {
 
 .menu {
   display: flex;
+ 
   margin-bottom: var(--gutter);
 }
 
@@ -32,6 +53,10 @@ p {
   margin: 0;
   margin-top: calc(var(--gutter) * 5);
   margin-bottom: calc(var(--gutter) * -0.3125);
+  @media screen and (max-width: 700px){
+    display: none;
+  }
+
 }
 
 .description {
@@ -55,12 +80,22 @@ p {
   margin-top: calc(var(--gutter) * -2);
   border-radius: var(--radius);
   padding: 0 10%;
+display: flex;
+flex-direction: column-reverse;
+
+  @media screen and (min-width: 700px)
+  {display: flex;
+    justify-content: center;
+    flex-direction:  row-reverse;
+    
+  
+  }
 }
 
-.skills--title {
-  margin: calc(var(--gutter) * -2) 0;
-  text-align: var(--textAlign);
-}
+/* .skills--title { */
+  /* margin: calc(var(--gutter) * -2) 0; */
+  /* text-align: var(--textAlign); */
+/* } */
 
 .column {
   border-left: var(--styledBorder);
@@ -108,3 +143,24 @@ p {
 .purple-text {
   color: var(--purple);
 }
+
+.disabled {opacity: 0.3;
+  
+
+
+
+}
+.projects {
+  
+  
+  @media screen and (min-width: 700px){
+  display: flex;
+  flex-direction: row;
+  
+ }}
+ h2 {    
+  text-align: center;}
+
+ p{@media screen and (min-width: 700px){text-align: center;}}
+
+.box { width: auto;}
