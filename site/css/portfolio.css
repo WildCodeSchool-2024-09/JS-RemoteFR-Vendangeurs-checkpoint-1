@@ -11,6 +11,17 @@
   --textAlign: center;
 }
 
+header nav{
+  display: flex;
+  justify-content: space-between;
+}    
+
+.presentation{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 img {
   max-width: 100%;
 }
