@@ -50,7 +50,6 @@ p {
 main > section {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	align-items: center;
 }
 
@@ -77,6 +76,15 @@ main > section {
 	padding: 0 10%;
 }
 
+@media screen and (min-width: 700px) {
+	.skills {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: center;
+		width: 100%;
+	}
+}
+
 .skills--title {
 	margin: calc(var(--gutter) * -2) 0;
 	text-align: var(--textAlign);
@@ -91,6 +99,7 @@ main > section {
 	border-radius: var(--radius);
 	text-align: var(--textAlign);
 	box-shadow: var(--styledShadow);
+	width: 100%;
 }
 
 .column:first-of-type {
