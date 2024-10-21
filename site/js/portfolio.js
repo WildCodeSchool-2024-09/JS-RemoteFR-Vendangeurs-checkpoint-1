@@ -10,9 +10,17 @@ avatarImg.addEventListener("click", () => {
 
 const button = document.getElementById("changeNameButton");
 const firstname = document.getElementById("firstname");
+const blocBgColor = document.getElementsByClassName("description pink-bg")[0];
 
 button.addEventListener("click", () => {
   let username = prompt("What's your name?");
-  firstname.innerHTML = username;
-  firstname.style.color = "white";
+  if (username) {
+    firstname.innerHTML = username;
+    firstname.style.color = "white";
+  }
+
+  let bgColor = prompt("Enter a color");
+  if (bgColor) {
+    blocBgColor.style.backgroundColor = bgColor;
+  }
 });
