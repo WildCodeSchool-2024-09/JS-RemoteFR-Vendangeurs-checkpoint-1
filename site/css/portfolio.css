@@ -129,12 +129,20 @@ p {
   color: var(--lightWildColor);
 }
 
+.projects {
+  @media screen and (min-width: 700px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .projects a {
   color: var(--purple);
 }
 
 .box {
-  width: 25%;
+  /* width: 25%; */
+  width: 48%;
   padding: calc(var(--gutter) * 2);
   border: var(--styledBorder);
   margin: calc(var(--gutter) * 1.25);
