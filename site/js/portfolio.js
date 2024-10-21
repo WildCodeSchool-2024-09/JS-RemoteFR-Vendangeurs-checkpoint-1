@@ -11,8 +11,6 @@ const elementsColor = document.querySelectorAll(".pink-bg");
 const titlesColor = document.querySelectorAll(".pink-text");
 const linksColor = document.querySelectorAll("a");
 
-console.log(linksColor);
-
 changeNameButton.addEventListener("click", () => {
 	const choiceBgColor = prompt("What color do you want ?");
 	const userName = prompt("What's your name ?");

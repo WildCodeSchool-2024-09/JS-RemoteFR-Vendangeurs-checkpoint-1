@@ -78,6 +78,7 @@ main > section {
 	border: 1px solid var(--light);
 	color: var(--light);
 	cursor: pointer;
+	margin-top: var(--gutter);
 }
 
 .skills {
@@ -133,6 +134,21 @@ main > section {
 	color: var(--lightWildColor);
 }
 
+.projects {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 auto;
+}
+
+@media screen and (min-width: 700px) {
+	.projects-container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}
+
 .projects a {
 	color: var(--purple);
 }
@@ -142,12 +158,18 @@ main > section {
 }
 
 .box {
-	width: 25%;
+	max-width: 100%;
 	padding: calc(var(--gutter) * 2);
 	border: var(--styledBorder);
 	margin: calc(var(--gutter) * 1.25);
 	border-radius: var(--radius);
 	box-shadow: var(--styledShadow);
+}
+
+@media screen and (min-width: 700px) {
+	.box {
+		max-width: 25%;
+	}
 }
 
 .purple-text {
