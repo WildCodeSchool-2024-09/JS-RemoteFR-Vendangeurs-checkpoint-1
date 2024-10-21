@@ -108,3 +108,31 @@ p {
 .purple-text {
   color: var(--purple);
 }
+/* code rajouter par de couleur menu */
+.menu li a {
+  color: var(--purple); /* Utilise la variable pour appliquer la couleur */
+}
+
+/* code rajouter par Mateusz */
+@media (min-width: 700px) {
+  nav {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+  }
+
+  .menu {
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 0px; 
+  }
+
+  .menu li {
+    display: inline-block;
+  }
+
+  .menu li a {
+    text-decoration: none;
+    }
+  }
