@@ -41,13 +41,17 @@ p {
 	margin-bottom: calc(var(--gutter) * -0.3125);
 }
 
-@media screen and (min-width: 700px) {
-	main > section {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
+@media screen and (max-width: 700px) {
+	.desktop {
+		display: none;
 	}
+}
+
+main > section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .description {
