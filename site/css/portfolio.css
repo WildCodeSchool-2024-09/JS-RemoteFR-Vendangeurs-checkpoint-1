@@ -71,6 +71,15 @@ main > section {
 	background-color: var(--lightWildColor);
 }
 
+#change-name {
+	background-color: var(--lightWildColor);
+	padding: calc(var(--gutter) / 1.8);
+	border-radius: calc(var(--radius) / 2);
+	border: 1px solid var(--light);
+	color: var(--light);
+	cursor: pointer;
+}
+
 .skills {
 	margin-top: calc(var(--gutter) * -2);
 	border-radius: var(--radius);

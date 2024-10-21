@@ -7,16 +7,19 @@ avatarImg.addEventListener("click", () => {
 // Modify text and color button
 const firstName = document.querySelector("#firstname");
 const changeNameButton = document.querySelector("#change-name");
-const bgColorSection = document.querySelector("section.pink-bg");
-const bgColorFooter = document.querySelector("footer.pink-bg");
+const elementsColor = document.querySelectorAll(".pink-bg");
+const titlesColor = document.querySelectorAll(".pink-text");
 
 changeNameButton.addEventListener("click", () => {
 	const choiceBgColor = prompt("What color do you want ?");
 	const userName = prompt("What's your name ?");
 	firstName.textContent = userName;
 	firstName.style.color = "white";
-	bgColorSection.style.backgroundColor = choiceBgColor;
-	bgColorFooter.style.backgroundColor = choiceBgColor;
+	changeNameButton.style.backgroundColor = choiceBgColor;
+	for (const element of elementsColor) {
+		element.style.backgroundColor = choiceBgColor;
+	}
+	for (const title of titlesColor) {
+		title.style.color = choiceBgColor;
+	}
 });
-
-console.log(bgColorFooter);
