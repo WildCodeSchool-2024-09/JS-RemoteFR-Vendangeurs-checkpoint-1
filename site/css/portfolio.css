@@ -55,12 +55,23 @@ p {
   margin-top: calc(var(--gutter) * -2);
   border-radius: var(--radius);
   padding: 0 10%;
+  display: flex;
+  flex-direction: row; /* Par défaut, les colonnes sont alignées en ligne (side by side) */
 }
 
 .skills--title {
   margin: calc(var(--gutter) * -2) 0;
   text-align: var(--textAlign);
 }
+
+
+/* Media query pour les écrans de moins de 700px */
+@media (max-width: 700px) {
+  .skills {
+    flex-direction: column-reverse; /* Inverse l'ordre : Front-end en premier */
+  }
+}
+
 
 .column {
   border-left: var(--styledBorder);
@@ -113,6 +124,23 @@ p {
   color: var(--purple); /* Utilise la variable pour appliquer la couleur */
 }
 
+ /* Mateusz Ajout pour centrer la bannière */
+ .banner {
+  @media screen and (min-width: 700px) {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+}
+
+.banner-content {
+  text-align: center;
+}
+
+ 
+
 /* code rajouter par Mateusz */
 @media (min-width: 700px) {
   nav {
@@ -135,4 +163,9 @@ p {
   .menu li a {
     text-decoration: none;
     }
-  }
+     .banner {
+        justify-content: center;
+      }
+    }
+
+ 
