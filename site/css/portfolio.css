@@ -60,6 +60,8 @@ p {
   margin-top: calc(var(--gutter) * -2);
   border-radius: var(--radius);
   padding: 0 10%;
+  display: flex;
+  flex-direction: column-reverse;
  
   @media screen and (min-width: 700px){
     display: flex;
@@ -71,10 +73,12 @@ p {
 .skills--title {
   margin: calc(var(--gutter) * -2) 0;
   text-align: var(--textAlign);
-  
+  order: 2;
+  z-index: 1000;
   @media screen and (min-width: 700px){
-
-  }
+    width: 100%;
+    }
+  
 }
 
 
